@@ -68,7 +68,33 @@ nav ul li a:hover::after{
      color: #ff004f;
 }
 
-/*----------about-----------*/
-#about{
-     padding: 80px 0;
-     color: green;
+.icon-container {
+  display: flex;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-size: cover;
+}
+
+.fb {
+  background-image: url('path/to/fb-icon.png'); /* Replace with the actual path to your Facebook icon image */
+}
+
+.messenger {
+  background-image: url('path/to/messenger-icon.png'); /* Replace with the actual path to your Messenger icon image */
+}
+
+.tiktok {
+  background-image: url('path/to/tiktok-icon.png'); /* Replace with the actual path to your TikTok icon image */
+}
+
+.youtube {
+  background-image: url('path/to/youtube-icon.png'); /* Replace with the actual path to your YouTube icon image */
+}
+
+.instagram {
+  background-image: url('path/to/instagram-icon.png'); /* Replace with the actual path to your Instagram icon image */
+}
