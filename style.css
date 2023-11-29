@@ -1,4 +1,4 @@
-*{
+*/
      margin:0;
      padding:0;
      font-family: 'Poppins', sans-serif;
@@ -72,80 +72,3 @@ nav ul li a:hover::after{
 #about{
      padding: 80px 0;
      color: green;
-}
-.row{
-     display: flex;
-     justify-content: space;
-     flex-wrap: wrap;
-}
-     
-.about-col-1{
-     flex-basis: 50%;
-}        
-.about-col-1{
-     flex-basis: 60px;
-}
-
-.sub-title{
-     font-size: 50px;
-     font-weight: 600;
-     color: green;
-}
-
-.tab-titles{
-     display: flex;
-     margin: 20px 0 40px;
-}
-
-.tab-titles{
-     margin-right: 50px;
-     font-size: 18px;
-     font-weight: 500;
-     cursor: pointer;
-     position: relative;
-}
-.tab-links::after{
-     content: '';
-     width: 0;
-     height: 3px;
-     background: red;
-     position: absolute;
-     left: 0;
-     bottom: 8px;
-     transition: 0.5s;
-}
- .tab-links.active-link::after{
-      width: 50%;
- }
-
-
-.tab-contents ul li{
-     list-style: none;
-     margin: 10px 0;
-}
-.tab-contents ul li span{
-     color: red;
-     font-size: 14px;
-}
-.tab-contents{
-     display: none;
-}
-
-.tab-contents.active-tab{
-     display: black;
-}
-.tab-content.active-tab{
-     display: black;
-}
-
-
-
-
-  <body>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-<style>
-body {
-  font-family: "Sofia", sans-serif;
-}
-</style>
-
