@@ -50,4 +50,11 @@ nav ul li a: :after{
     bottom: -6px;
 }
 
+  <body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+}
+</style>
 
