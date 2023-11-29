@@ -134,6 +134,9 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
      display: black;
 }
+.tab-content.active-tab{
+     display: black;
+}
 
 
 
