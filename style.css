@@ -75,20 +75,20 @@ nav ul li a:hover::after{
 }
 .row{
      display: flex;
-     justify-content: space;;
+     justify-content: space;
      flex-wrap: wrap;
 }
      
 .about-col-1{
-     flex-basis: 35%;
+     flex-basis: 50%;
 }        
 .about-col-1{
      flex-basis: 60px;
 }
 
 .sub-title{
-     font-size: 30px;
-     font-weight: 300;
+     font-size: 50px;
+     font-weight: 600;
      color: green;
 }
 
