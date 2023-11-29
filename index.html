@@ -74,34 +74,44 @@ body {
                   <p>Hi I'm Michelle Callao Del Rosario 2nd year students . Taking a course of Bachelor of science in Computer Programing</p>
 
                   <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                         <p class="tab-titles">Experience</p>
-                         <p class="tab-titles">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')>Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')>Experince</p>
+                        <p class="tab-links" onclick="opentab('Education')>Education</p>
             </div>
-             <div class="tab-contents active-tab">
+             <div class="tab-contents active-tab" id="skills">
                    <ul>
                           <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
                           <li><span>Web Development</span><br>Web/App Development</li>
                           <li><span>App Development</span><br>Building Android/ios apps</li>
                    </ul>
       </div>
-      <div class="tab-contents">
+      <div class="tab-contents" id="experience">
                    <ul>
                           <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
                           <li><span>Web Development</span><br>Web/App Development</li>
                           <li><span>App Development</span><br>Building Android/ios apps</li>
                    </ul>
       </div> 
-                   <div class="tab-contents">
+                   <div class="tab-contents"id="Education">
                    <ul>
                           <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
                           <li><span>Web Development</span><br>Web/App Development</li>
                           <li><span>App Development</span><br>Building Android/ios apps</li>
                    </ul>
       </div>
+    </div>
   </div>
+ </div>
 </div>
 
+      <script>
+            var tablinks= document.getElementsByClassNAme("tab-links");
+            var tabcontents= document.getElementsByClassNAme("tab-contents");
+           
+            function opentab(tabname){
+            }
+            
+      </script>
 
 
 
