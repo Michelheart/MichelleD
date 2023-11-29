@@ -5,8 +5,8 @@
      box-sizing: border-box;
 }
 body{
-      background-image: url(beauty.jpg);
-     color: #fff;
+      background-color: black;
+     color: black;
 }
 #header{
      width: 100%;
