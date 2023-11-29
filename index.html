@@ -72,60 +72,97 @@ body {
                    <div class="about-col-1"></div>
                   <h1 class="sub-title">About Me</h1>
                   <p>Hi I'm Michelle Callao Del Rosario 2nd year students . Taking a course of Bachelor of science in Computer Programing</p>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
 
-                  <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')>Skills</p>
-                        <p class="tab-links" onclick="opentab('Experience')>Experince</p>
-                        <p class="tab-links" onclick="opentab('Education')>Education</p>
-            </div>
-             <div class="tab-contents active-tab" id="skills">
-                   <ul>
-                          <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
-                          <li><span>Web Development</span><br>Web/App Development</li>
-                          <li><span>App Development</span><br>Building Android/ios apps</li>
-                   </ul>
-      </div>
-      <div class="tab-contents" id="experience">
-                   <ul>
-                          <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
-                          <li><span>Web Development</span><br>Web/App Development</li>
-                          <li><span>App Development</span><br>Building Android/ios apps</li>
-                   </ul>
-      </div> 
-                   <div class="tab-contents"id="Education">
-                   <ul>
-                          <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
-                          <li><span>Web Development</span><br>Web/App Development</li>
-                          <li><span>App Development</span><br>Building Android/ios apps</li>
-                   </ul>
-      </div>
-    </div>
-  </div>
- </div>
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
 </div>
 
-      <script>
-            var tablinks= document.getElementsByClassNAme("tab-links");
-            var tabcontents= document.getElementsByClassNAme("tab-contents");
-           
-            function opentab(tabname){
-                  for(tablink of tablinks){
-                  tablink.classList.remove("active-link");
-                  }
-                  for(tabcontent of tabcontents){
-                  tabcontent.classList.remove("active-tab");
-            }
-            
-            
-      </script>
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
 
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
 
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
 
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
 
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
 
-
-
-
-
-                  
-                  
+               
