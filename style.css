@@ -125,9 +125,11 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li span{
      color: red;
-     font-size: 40px;
+     font-size: 14px;
 }
-
+.tab-contents{
+     display: none;
+;
 
 
 
