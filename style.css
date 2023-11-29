@@ -116,9 +116,17 @@ nav ul li a:hover::after{
 }
  .tab-links.active-link::after{
       width: 50%;
-;
+ }
 
 
+.tab-contents ul li{
+     list-style: none;
+     margin: 10px 0;
+}
+.tab-contents ul li span{
+     color: red;
+     font-size: 40px;
+}
 
 
 
