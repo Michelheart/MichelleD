@@ -92,6 +92,18 @@ nav ul li a:hover::after{
      color: green;
 }
 
+.tab-titles{
+     display: flex;
+     margin: 20px 0 40px;
+}
+
+.tab-titles{
+     margin-right: 50px;
+     font-size: 18px;
+     font-weight: 500;
+     cursor: pointer;
+     position: relative;
+}
 
 
 
