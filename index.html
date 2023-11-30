@@ -283,21 +283,99 @@ document.getElementById("defaultOpen").click();
 </body>
 </html> 
 
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaped Images</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .project {
+      width: 48%;
+      margin-bottom: 20px;
+      background-color: #ddd;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 50%; /* Creates a circular shape */
+      /* Other shapes: border-radius: 25% (oval), border-radius: 10px (rounded corners) */
+    }
+
+    @media (max-width: 600px) {
+      .project {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
 <body>
-<center>
-<img src="love.jpg" alt="love" usemap="#aboutmap" width="400" height="379">
 
-<map name="aboutmap">
-  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
-  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
-</map>
-</center>
-</body>
-</html>
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer</p>
+  </header>
 
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <img src="love.jpg" alt="love">
+        <h3>My Life Quotes /h3>
+        <p>“The most important thing is to enjoy your life—to be happy—it’s all that matters.”</p>
+      </div>
+      <div class="project">
+        <img src="miss.jpg" alt="miss">
+        <h3>My Dreams Quotes </h3>
+        <p>Hold fast to dreams, for if dreams die, life is a broken-winged bird that cannot fly. A dreamer is one who can only find his way by moonlight, and his punishment is that he sees the dawn before the rest of the world.</p>
+
+
+
+
+              
 <!DOCTYPE html>
 <html lang="en">
 <head>
